@@ -1,0 +1,108 @@
+---
+title: "Why I Started Building for Goa Specifically"
+publishedAt: "2026-04-03"
+author: "Dale Rio Luis"
+tags: ["personal", "projects", "goa", "sustainability", "student"]
+summary: "Almost every project I've built points back to the same small coastal state. Here's why I think that's right."
+---
+
+# Why I Started Building for Goa Specifically
+
+There's a particular kind of guilt that comes with growing up in one of the most visited places in the world and watching it get harder to love.
+
+I'm from Goa. If you've been here, you know what tourists see: the beaches, the Portuguese houses, the seafood, the light at 6pm. That version is real. But there's another version. The one locals actually live in.
+
+**205 grams of marine debris per square metre** on Goa's beaches - the highest density in India. **887 tonnes of waste every single day**, heading toward 1,108 tonnes by 2035. A state of 1.5 million people generating **46% more garbage per capita than the national average**, largely because 7 million tourists pass through each year and waste segregation doesn't rank high on a holiday agenda.
+
+That version is also real. And for a while I didn't know what to do with it.
+
+Then I started learning to code.
+
+---
+
+## The Moment It Clicked
+
+I was a first-year engineering student when I built my first real project - something small, just to learn. It worked, kind of. But I remember thinking: _who is this for?_ I'd built a solution looking for a problem.
+
+That feeling stuck.
+
+A few months later, I was walking back from Miramar beach and I noticed the waterline. Not the water - the line of plastic bottles, wrappers, and nets sitting at the edge of the sand. Cleanup volunteers had been there the day before. The waste was back overnight. Baga Beach now clocks microplastic concentrations at **0.6 particles per litre**, above every ecological threshold researchers measure against.
+
+I didn't think "I should solve this." Not immediately. But the image stayed.
+
+When the next hackathon came around, I had a starting point.
+
+---
+
+## Circular-Hub: Goa's Waste Has Value Nobody's Capturing
+
+The first time I talked to small businesses in Goa about what they do with recyclable material — plastic, glass, organic waste — I kept getting the same answer: _we throw it away because we don't know who to sell it to._
+
+This is happening in a state where tourists alone generate an estimated **273,408 tonnes of waste per year**, and where the government has already spent **₹600 crore on waste recovery equipment** — half of which is sitting unutilized. The gap isn't money. It's information.
+
+There are buyers. There are sellers. They can't find each other.
+
+Circular-Hub is a marketplace where businesses and households in Goa can list recyclable materials, find nearby listings, chat during transactions, and leave reviews. The part I cared most about was the map — an interactive view showing what recyclable materials are available near you, right now, in your district. Something that made the circular economy feel local and immediate, not like an abstract global concept.
+
+Building it taught me that the hardest part of a marketplace isn't the code — it's trust. So we built a review system where neither party's review goes public until both submit. Small design decision. Real implication.
+
+---
+
+## The Beach Robot: When Software Alone Isn't Enough
+
+After the marketplace, I thought software could solve most things if you designed it well enough.
+
+Then I worked on the Coastal Cleanup Robot.
+
+Goa's beaches don't just have visible trash. Studies using Scanning Electron Microscopy have found microplastic particles with signs of surface degradation — meaning the plastic has been in the marine environment long enough to start binding with toxic chemicals. It's entering the food chain.
+
+The premise was straightforward: autonomous patrols, object detection, waste collection. I trained a YOLOv8 model on a dataset we built ourselves — photos of actual coastal waste: plastic bags, nets, bottles, half-buried debris. Things a model trained on clean benchmark photos would miss entirely.
+
+What the project actually taught me was humility. You can build a solid detection model and still have the robot get stuck in wet sand. The real world doesn't run on clean data or flat surfaces. Good software meets the physical world and has to negotiate with it.
+
+---
+
+## RainGauge: The Problem Nobody Talks About Until Summer
+
+Here's a strange paradox: Goa receives **3,200mm of rainfall per year** — among the highest in the country. And yet every dry season, households run out of water. During peak summer, public water supply drops by **almost 50%**, and people overextract from bore wells until some run dry.
+
+The reason is geological. Goa's laterite plateaus drain fast. Most of that monsoon rain flows into the sea before it can recharge the aquifers. Groundwater already makes up **over 33% of the state's water supply**, and extraction has been creeping up. The government recently mandated rooftop rainwater harvesting for large buildings under the _'Catch the Rain 2025'_ campaign — an official acknowledgment that the gap is real.
+
+RainGauge started as an attempt to answer a simple question: _how much rainwater could your household actually collect, and what would it take to store it?_
+
+We built an advisor that pulls real rainfall data for your location, analyses your roof and free space through a mapping interface, calculates your harvesting potential, and gives you exact dimensions and a rough budget for a recharge system. IoT sensors track what you actually collect versus what was projected.
+
+What surprised me was how many people in interior Goa had never had this information in a usable form. The data existed. The engineering knowledge existed. It just wasn't accessible to the household trying to plan for April.
+
+That's a software problem.
+
+---
+
+## Why Goa, Specifically
+
+I've heard the advice: build for scale, build for the largest market, build generic. And I get it.
+
+But I think there's something worth defending about knowing your user.
+
+When I build for Goa, I know what a beach looks like after a weekend in peak season. I know what a small Goan business owner's day looks like. I know what water scarcity feels like in April. I know which problems people have quietly accepted as normal that don't have to be.
+
+That knowledge makes me a better builder. Not because the tech changes — React components and Python models work the same anywhere. But because I understand the stakes. When I design a trust system for Circular-Hub, I'm thinking about real people in Mapusa or Margao trying to do the right thing with their waste. When I tune the detection model, I'm thinking about actual trash on Goan sand, not a benchmark dataset.
+
+Local knowledge isn't a limitation. It's a design advantage.
+
+---
+
+## What's Next
+
+I'm still a student. Most of what I've built is early — prototypes, hackathon submissions, MVPs that haven't had thousands of users yet.
+
+But **1,108 tonnes of waste per day by 2035**. Microplastics above safety thresholds on beaches that 7 million people visit each year. Bore wells running dry in a state that gets 3,200mm of rain.
+
+These problems are solvable. Not completely, and not by one person. But the gap between the data that exists and the tools that make it actionable for real people? That's a gap I know how to close.
+
+The tourist version of Goa is beautiful. I'd like to help make sure the local version lasts long enough to keep it that way.
+
+---
+
+_Working on local environmental tech, civic platforms, or sustainability in coastal regions? I'd like to talk.
+[dalerioluis@gmail.com](mailto:dalerioluis@gmail.com)_
