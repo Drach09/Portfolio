@@ -1,0 +1,29 @@
+import type { SVGProps } from "react";
+
+const Openlayers = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    viewBox="0 0 100 100"
+  >
+    <defs>
+      <g id="ol-layer" transform="translate(50 50)">
+        <g transform="scale(0.7071 0.5)">
+          <g transform="translate(-50 -50)">
+            <rect width="100" height="100" rx="15" transform="rotate(45 50 50)" />
+          </g>
+        </g>
+      </g>
+    </defs>
+    <g fill="#FFFFFF" transform="translate(0 10)">
+      <use href="#ol-layer"/>
+    </g>
+    <g fill="#333333">
+      <use href="#ol-layer"/>
+    </g>
+    <g fill="#00AAFF" transform="translate(0 -10)">
+      <use href="#ol-layer"/>
+    </g>
+  </svg>
+);
+
+export { Openlayers };

@@ -11,6 +11,18 @@ import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { Cplusplus } from "@/components/ui/svgs/cplusplus";
+import { Javascript } from "@/components/ui/svgs/javascript";
+import { Angular } from "@/components/ui/svgs/angular";
+import { Fastapi } from "@/components/ui/svgs/fastapi";
+import { Mysql } from "@/components/ui/svgs/mysql";
+import { Firebase } from "@/components/ui/svgs/firebase";
+import { Git } from "@/components/ui/svgs/git";
+import { Openlayers } from "@/components/ui/svgs/openlayers";
+import { Ros } from "@/components/ui/svgs/ros";
+import { Html5 } from "@/components/ui/svgs/html5";
+import { Css3 } from "@/components/ui/svgs/css3";
+import { Php } from "@/components/ui/svgs/php";
 
 interface HackathonLink {
   icon: React.ReactNode;
@@ -31,19 +43,32 @@ export const DATA = {
   location: "Goa, India",
   locationLink: "https://www.google.com/maps/place/goa",
   description:
-    "Computer Engineering student with hands-on experience in full-stack development. Proven ability to build and ship real-world applications with multiple top-10 hackathon finishes and projects ranging from B2B marketplaces to wearable health devices.",
+    "Computer Engineering student with hands-on experience in full-stack development. Proven ability to build and ship real-world applications with multiple top-5 hackathon finishes and projects ranging from B2B marketplaces to wearable health devices.",
   summary:
-    "Computer Engineering student (CGPA: 8.67) building intelligent solutions with full-stack expertise. Shipped multiple production applications including real-time marketplaces, AI-powered tools, and autonomous systems. 4x hackathon top-10 finalist. Skilled in React, Python, Node.js, and cloud technologies with proven ability to architect scalable systems and ship projects end-to-end.",
+    "Computer Engineering student (CGPA: 8.76) building intelligent solutions with full-stack expertise. Shipped multiple production applications including real-time marketplaces, AI-powered tools, and autonomous systems. 4x hackathon top-10 finalist. Skilled in React, Python, Node.js, and cloud technologies with proven ability to architect scalable systems and ship projects end-to-end.",
   avatarUrl: "/dale.jpeg",
   skills: [
     { name: "React", icon: ReactLight },
+    { name: "ReactJS", icon: ReactLight },
     { name: "Python", icon: Python },
     { name: "Java", icon: Java },
-    { name: "JavaScript", icon: Nodejs },
-    { name: "C++", icon: Csharp },
-    { name: "PostgreSQL", icon: Postgresql },
-    { name: "Node.js", icon: Nodejs },
+    { name: "JavaScript", icon: Javascript },
     { name: "TypeScript", icon: Typescript },
+    { name: "C++", icon: Cplusplus },
+    { name: "C/C++", icon: Cplusplus },
+    { name: "HTML/CSS", icon: Html5 },
+    { name: "PHP", icon: Php },
+    { name: "Node.js", icon: Nodejs },
+    { name: "FastAPI", icon: Fastapi },
+    { name: "Angular", icon: Angular },
+    { name: "PostgreSQL", icon: Postgresql },
+    { name: "MySQL", icon: Mysql },
+    { name: "Firebase", icon: Firebase },
+    { name: "Docker", icon: Docker },
+    { name: "Git", icon: Git },
+    { name: "GitHub", icon: Icons.github },
+    { name: "ROS 2", icon: Ros },
+    { name: "OpenLayers", icon: Openlayers },
   ],
   technicalSkills: {
     languages: [
@@ -123,6 +148,18 @@ export const DATA = {
 
   work: [
     {
+      company: "ExaSpace Labs",
+      href: "#",
+      badges: [],
+      location: "Goa",
+      title: "Fullstack Developer Intern",
+      logoUrl: "/exaspace.png",
+      start: "April 2026",
+      end: "June 2026",
+      description:
+        "Contributed to live, production-grade company projects as a Fullstack Developer Intern. Designed, built, and optimized frontend user interfaces and backend API services. Collaborated closely with the engineering team to implement new features, debug existing code, and maintain software reliability and performance.",
+    },
+    {
       company: "Bodhami",
       href: "https://bodhami.com",
       badges: [],
@@ -142,7 +179,7 @@ export const DATA = {
       degree: "Bachelor of Engineering in Computer Engineering",
       logoUrl: "/pcce.png",
       start: "2022",
-      end: "Present",
+      end: "2026",
     },
     {
       school: "The Kings School Goa",
@@ -176,7 +213,6 @@ export const DATA = {
         "PostgreSQL",
         "WebSockets",
       ],
-      links: [] as ProjectLink[],
       image: "/undraw_customer-survey_ek29.svg",
       video: "",
       gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
@@ -196,7 +232,6 @@ export const DATA = {
         "Google Gemini API",
         "BeautifulSoup",
       ],
-      links: [] as ProjectLink[],
       image: "/undraw_online-ad_703t.svg",
       video: "",
       gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
@@ -216,7 +251,6 @@ export const DATA = {
         "Angular",
         "TypeScript",
       ],
-      links: [] as ProjectLink[],
       image: "/undraw_beach-day_cnsv.svg",
       video: "",
       gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
@@ -229,7 +263,6 @@ export const DATA = {
       description:
         "AI advisor for rainwater harvesting: analyzes satellite imagery, rainfall patterns, and soil data to generate actionable system designs with exact dimensions and budget guidance. Integrated automated data pipelines, OpenLayers-based roof mapping, 16-day weather forecasts, and an AI chatbot. Designed IoT sensor architecture for real-time tracking and projected-vs-actual analytics dashboard.",
       technologies: ["OpenLayers", "Python", "Angular", "TypeScript", "IoT"],
-      links: [] as ProjectLink[],
       image: "/undraw_weather-forecast_h6pw.svg",
       video: "",
       gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
